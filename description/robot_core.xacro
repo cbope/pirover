@@ -130,6 +130,11 @@
         </xacro:inertial_cylinder>
     </link>
 
+    <gazebo reference="left_front_wheel">
+        <mu1 value="0.0001"/>
+        <mu2 value="0.0001"/>
+    </gazebo>
+
     <!-- RIGHT FRONT WHEEL LINK-->
 
     <joint name="right_front_wheel_joint" type="continuous">
@@ -155,5 +160,10 @@
             <origin xyz="0 0 0" rpy="0 0 0"/>
         </xacro:inertial_cylinder>
     </link>
+
+     <gazebo reference="right_front_wheel">
+        <mu1 value="0.0001"/>
+        <mu2 value="0.0001"/>
+    </gazebo>
 
 </robot>
